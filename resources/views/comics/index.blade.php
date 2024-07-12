@@ -4,7 +4,7 @@
 <h2>Elenco comics</h2>
 <ul>
     @foreach ($comics as $comic)
-    <li>{{$comic['title']}}</li>
+    <li><a href="{{route('comics.show', $comic->id)}}">{{$comic['title']}}</a></li>
     @endforeach
 </ul>
 @endsection
