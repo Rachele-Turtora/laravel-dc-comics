@@ -10,7 +10,7 @@
 
 <body>
     @include('shared.header')
-    <h1>Template Laravel</h1>
+    @yield('main')
     @include('shared.footer')
 </body>
 
