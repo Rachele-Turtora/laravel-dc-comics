@@ -1,1 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
+
+ul {
+    display: inline;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.img-container {
+    width: 100px;
+    height: 100px;
+}
