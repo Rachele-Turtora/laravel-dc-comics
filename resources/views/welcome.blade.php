@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
 @section('main')
-<h3>Che bella la pagina dei fumetti</h3>
+<h2>Ecco la pagina dei comics DC</h2>
+<a href="{{route('comics.index')}}">Vai all'elenco</a>
 @endsection
