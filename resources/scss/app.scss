@@ -8,7 +8,6 @@ ul {
 
 a {
     text-decoration: none;
-    color: rgb(100, 100, 100);
 }
 
 img {
@@ -26,7 +25,7 @@ header li:hover {
 }
 
 .img-container {
-    width: 200px;
+    width: 80px;
 }
 
 .card-container {
@@ -67,6 +66,14 @@ header li:hover {
     a {
         color: #0D6EFD;
     }
+}
+
+.comic a {
+    color: rgb(100, 100, 100);
+}
+
+.comic a:hover {
+    color: #0D6EFD;
 }
 
 .bottom-menu p {

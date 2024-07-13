@@ -2,7 +2,7 @@
     <div class="container">
         <div class="d-flex align-items-center">
             <div class="col-3">
-                <div class="img-container m-3">
+                <div class="img-container m-4">
                     <a href="{{route('home')}}"><img src="{{ Vite::asset('resources/img/logo.png') }}" alt="logo"></a>
                 </div>
             </div>
