@@ -1,15 +1,21 @@
-<header>
+<header class="@unless(Route::currentRouteName() === 'home') bg-black text-light @endunless">
     <div class="container">
         <div class="d-flex align-items-center">
             <div class="col-3">
                 <div class="img-container m-3">
-                    <img src="{{ Vite::asset('resources/img/logo.png') }}" alt="logo">
+                    <a href="{{route('home')}}"><img src="{{ Vite::asset('resources/img/logo.png') }}" alt="logo"></a>
                 </div>
             </div>
             <div class="col-9">
                 <ul>
                     @foreach ($header_list as $item)
-                    <li class="text-uppercase fw-bold mx-2">{{$item}}</li>
+                    <li class="text-uppercase fw-bold mx-2">
+                        @if ($item === 'comics')
+                        <a href="{{ route('comics.index') }}">{{ $item }}</a>
+                        @else
+                        {{ $item }}
+                        @endif
+                    </li>
                     @endforeach
                 </ul>
             </div>
