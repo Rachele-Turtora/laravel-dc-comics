@@ -7,6 +7,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 img {
@@ -31,6 +32,41 @@ header li:hover {
 .card-container {
     width: 60%;
     margin: 20px;
+}
+
+.jumbo {
+    position: relative;
+    background-image: url("../img/jumbo_bg.jpg");
+    background-size: 100%;
+    height: 300px;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.jumbo button {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid white;
+
+    a {
+        color: white;
+    }
+}
+
+.jumbo button:hover {
+    border-color: #0D6EFD;
+
+    a {
+        color: #0D6EFD;
+    }
 }
 
 .footer-top-bg {
