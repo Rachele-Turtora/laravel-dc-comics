@@ -62,6 +62,29 @@ class PageController extends Controller
             ]
         ];
 
-        return view('welcome', compact('header_list', 'footer_lists'));
+        $menu = [
+            [
+                "icon" => "fa-solid fa-tablet-screen-button",
+                "text" => "Digital Comics"
+            ],
+            [
+                "icon" => "fa-solid fa-shirt",
+                "text" => "DC Merchandise"
+            ],
+            [
+                "icon" => "fa-regular fa-heart",
+                "text" => "Subscription"
+            ],
+            [
+                "icon" => "fa-solid fa-location-dot",
+                "text" => "Comic Shop Locator"
+            ],
+            [
+                "icon" => "fa-solid fa-bolt-lightning",
+                "text" => "DC Power Visa"
+            ],
+        ];
+
+        return view('welcome', compact('header_list', 'footer_lists', 'menu'));
     }
 }

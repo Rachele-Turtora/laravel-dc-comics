@@ -12,6 +12,7 @@
 <body>
     @include('shared.header')
     @yield('main')
+    @include('shared.bottom-menu')
     @include('shared.footer')
 </body>
 
