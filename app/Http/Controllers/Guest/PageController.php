@@ -9,6 +9,19 @@ class PageController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $header_list = [
+            "characters",
+            "comics",
+            "movies",
+            "tv",
+            "games",
+            "collectibles",
+            "videos",
+            "fans",
+            "news",
+            "shop"
+        ];
+
+        return view('welcome', compact('header_list'));
     }
 }
