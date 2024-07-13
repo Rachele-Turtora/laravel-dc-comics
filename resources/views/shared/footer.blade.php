@@ -4,7 +4,7 @@
             <div class="footer-top">
                 <ul class=" footer-lists d-flex">
                     @foreach ($footer_lists as $footer_list)
-                    <li class="m-2">
+                    <li class="m-3">
                         <ul class="footer-list">
                             @foreach ($footer_list as $item)
                             <li>{{$item}}</li>

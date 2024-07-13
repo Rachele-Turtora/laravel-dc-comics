@@ -12,10 +12,10 @@
             </div>
             <div class="d-flex">
                 <button class="btn btn-outline-primary m-1">
-                    <i class="fa-solid fa-pencil text-primary"></i>
+                    <i class="fa-solid fa-pencil"></i>
                 </button>
                 <button class="btn btn-outline-danger m-1">
-                    <i class="fa-solid fa-trash text-danger"></i>
+                    <i class="fa-solid fa-trash"></i>
                 </button>
             </div>
         </li>
