@@ -9,9 +9,9 @@
             <div class="col-9">
                 <ul>
                     @foreach ($header_list as $item)
-                    <li class="text-uppercase fw-bold mx-2">
+                    <li class="text-uppercase gray fw-bold mx-2">
                         @if ($item === 'comics')
-                        <a href="{{ route('comics.index') }}">{{ $item }}</a>
+                        <a class="gray" href="{{ route('comics.index') }}">{{ $item }}</a>
                         @else
                         {{ $item }}
                         @endif

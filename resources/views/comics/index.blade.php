@@ -7,7 +7,7 @@
         @foreach ($comics as $comic)
         <li class="comic m-2">
             <!--<img src="{{ $comic['thumb'] }}" alt="img">-->
-            <a href="{{route('comics.show', $comic->id)}}">{{$comic['title']}}</a>
+            <a class="gray" href="{{route('comics.show', $comic->id)}}">{{$comic['title']}}</a>
         </li>
         @endforeach
     </ul>

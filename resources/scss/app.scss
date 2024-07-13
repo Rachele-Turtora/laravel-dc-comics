@@ -14,10 +14,13 @@ img {
     width: 100%;
 }
 
+.gray {
+    color: rgb(100, 100, 100);
+}
+
 header li {
     display: inline;
     font-size: 12px;
-    color: rgb(100, 100, 100);
 }
 
 header li:hover {
@@ -29,8 +32,8 @@ header li:hover {
 }
 
 .card-container {
-    width: 60%;
-    margin: 20px;
+    width: 70%;
+    margin: 30px;
 }
 
 .jumbo {
@@ -66,10 +69,6 @@ header li:hover {
     a {
         color: #0D6EFD;
     }
-}
-
-.comic a {
-    color: rgb(100, 100, 100);
 }
 
 .comic a:hover {

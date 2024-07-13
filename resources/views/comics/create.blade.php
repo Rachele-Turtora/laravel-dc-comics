@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('main')
-<div class="container w-75">
+<div class="container w-75 my-3">
     <h2>Inserisci un nuovo comic</h2>
 
     <form action="{{route('comics.store')}}" method="POST">
