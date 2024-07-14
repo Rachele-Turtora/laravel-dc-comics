@@ -14,9 +14,13 @@
                 <button class="btn btn-outline-primary m-1">
                     <i class="fa-solid fa-pencil"></i>
                 </button>
-                <button class="btn btn-outline-danger m-1">
-                    <i class="fa-solid fa-trash"></i>
-                </button>
+                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-outline-danger m-1" onclick="return confirm('Sei sicuro di voler eliminare questo comic?');">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </form>
             </div>
         </li>
         @endforeach

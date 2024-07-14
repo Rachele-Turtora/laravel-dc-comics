@@ -7,7 +7,11 @@
                     <li class="m-3">
                         <ul class="footer-list">
                             @foreach ($footer_list as $item)
+                            @if ($item === "Comics")
+                            <li><a class="gray" href="{{route('comics.index')}}">{{$item}}</a></li>
+                            @else
                             <li>{{$item}}</li>
+                            @endif
                             @endforeach
                         </ul>
                     </li>
