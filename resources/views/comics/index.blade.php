@@ -16,10 +16,10 @@
                         <i class="fa-solid fa-pencil"></i>
                     </button>
                 </a>
-                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="form-delete">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-outline-danger m-1" onclick="return confirm('Sei sicuro di voler eliminare questo comic?');">
+                    <button type="submit" class="btn btn-outline-danger m-1" id="delete-button">
                         <i class="fa-solid fa-trash"></i>
                     </button>
                 </form>
