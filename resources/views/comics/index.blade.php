@@ -11,9 +11,11 @@
                 <a class="gray" href="{{route('comics.show', $comic->id)}}">{{$comic['title']}}</a>
             </div>
             <div class="d-flex">
-                <button class="btn btn-outline-primary m-1">
-                    <i class="fa-solid fa-pencil"></i>
-                </button>
+                <a href="{{route('comics.edit', $comic->id)}}">
+                    <button class="btn btn-outline-primary m-1">
+                        <i class="fa-solid fa-pencil"></i>
+                    </button>
+                </a>
                 <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
