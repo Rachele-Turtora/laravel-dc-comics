@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateComicRequest extends FormRequest
 {
@@ -22,7 +23,7 @@ class UpdateComicRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|min:3|max:50|string',
+            'title' => ['required', 'min:3', 'max:50', 'string', Rule::unique('comics')->ignore($this->comic)],
             'price' => 'required|max:80|numeric|decimal:0,2',
             'type' => 'required|min:5|max:50|string',
             'description' => 'required|string'
@@ -36,6 +37,7 @@ class UpdateComicRequest extends FormRequest
             'title.min' => 'Il titolo deve contenere minimo 3 caratteri',
             'title.max' => 'Il titolo deve contenere massimo 50 caratteri',
             'title.string' => 'Il titolo deve essere una stringa',
+            'title.unique' => 'Questo titolo esiste già',
             'price.required' => 'Il prezzo è obbligatorio',
             'price.max' => 'Il prezzo è troppo alto (max 80)',
             'price.numeric' => 'il prezzo deve essere un numero',
